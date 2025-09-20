@@ -3,24 +3,83 @@ layout: page
 title: Getting Started
 ---
 
-Getting started is *literally* as easy as 1-2-3 :smile:
+Getting started is *literally* as easy as 1-2-3 😄
 
 Scroll down to see the steps involved, but here is a 30-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com), you'll need to sign up.
 
 ![Installation steps](https://beautifuljekyll.com/assets/img/install-steps.gif)
 
-### 1. Fork this project
+<div class="gs-section-01" markdown="1">
 
-Click on the __*Fork*__ button at the top right corner of this page. Forking means that you're copying this entire project and all its files into your account. Do not click on the __*Create fork*__ button on the next page yet.
+### 1. Fork the Beautiful Jekyll repository
+Fork the [repository](https://github.com/daattali/beautiful-jekyll) by clicking the **Fork** button on the top-right corner in GitHub.
 
-### 2. Rename the repository to `YOURUSERNAME.github.io`
+</div>
 
-You'll see the word "repository" used a lot in GitHub - it simply means "project". Under __*Repository name*__ you should see the name `beautiful-jekyll`, this is where you need to rename your project to `YOURUSERNAME.github.io` (replace `YOURUSERNAME` with your GitHub user name). It's important to use this exact name so that GitHub will recognize it and automatically create a website for this project.   
+<div class="gs-section-02" markdown="1">
 
-> Tip: If you want to use a different URL for your website, check out the [FAQ](https://beautifuljekyll.com/faq/#custom-domain)
- 
-### 3. Customize your website settings
+### 2. Build your website in 3 steps
+After you fork the repo, go to **Settings → Pages** in your new repository.  
+Select the branch and folder (usually `master` with `/ (root)` for this template), then click **Save**.  
+Your site will be built automatically. The URL will be:
 
-Edit the `_config.yml` file to change any settings you want. To edit the file, first click on it to view the file, and on the next page click on the pencil icon to edit it (watch the video tutorial above if you're confused).  The settings in the file are self-explanatory and there are comments inside the file to help you understand what each setting does. Any line that begins with a hashtag (`#`) is a comment, and the other lines are actual settings. After changing the settings, click the green __*Commit changes*__ button to save these edits.
 
-> Note: In the video above, only one setting in the `_config.yml` file is edited, but you should go through the rest of the settings as well.
+</div>
+
+<div class="gs-section-03" markdown="1">
+
+### 3. Activate GitHub Pages
+Once the build is finished, you’ll see a success notice with a link to your site.  
+If it stalls, make a tiny edit (like updating `_config.yml`) or toggle the Pages folder to re-trigger the build.
+
+</div>
+
+<style>
+/* Shared look: soft card, subtle shadow, rounded corners */
+.gs-section-01,
+.gs-section-02,
+.gs-section-03 {
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 18px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  border-left: 6px solid transparent;
+}
+
+/* Section-specific “ocean” accents */
+.gs-section-01 { border-left-color: #4DD0E1; background: #F0FBFD; }  /* light aqua wash */
+.gs-section-02 { border-left-color: #0288D1; background: #F4FAFF; }  /* pale ocean blue */
+.gs-section-03 { border-left-color: #00796B; background: #F1FBF8; }  /* seafoam */
+
+/* Typography within each section */
+.gs-section-01 h3,
+.gs-section-02 h3,
+.gs-section-03 h3 {
+  margin-top: 0;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* Ocean header hues */
+.gs-section-01 h3 { color: #006064; } /* deep teal */
+.gs-section-02 h3 { color: #0288D1; } /* ocean blue */
+.gs-section-03 h3 { color: #00796B; } /* sea green */
+
+/* Body text + links */
+.gs-section-01 p,
+.gs-section-02 p,
+.gs-section-03 p,
+.gs-section-01 li,
+.gs-section-02 li,
+.gs-section-03 li { line-height: 1.6; }
+
+.gs-section-01 a,
+.gs-section-02 a,
+.gs-section-03 a { text-decoration: none; border-bottom: 1px dotted rgba(2,136,209,0.35); }
+
+.gs-section-01 a:hover,
+.gs-section-02 a:hover,
+.gs-section-03 a:hover { border-bottom-color: rgba(2,136,209,0.7); }
+</style>
+
